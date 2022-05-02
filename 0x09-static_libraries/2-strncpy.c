@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * _strncpy - two words
- * @dest : pointer to char params
- * @src : pointer to char params
- * @n : int params
- * Return: *dest
+ * _strncpy - This is my main
+ * @dest: This is my dest
+ * @src: This is my source
+ * @n: This is my N
+ *
+ *Return: THis is my return
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int b;
 
-	for (i = 0; src[i] != '\0' && i < n; i++)
+	for (b = 0; b < n && src[b] != '\0' ; b++)
 	{
-		dest[i] = src[i];
+	dest[b] = src[b];
 	}
-
-	for ( ; i < n; i++)
+	for (; b  < n; b++)
 	{
-		dest[i] = '\0';
+		dest[b] = '\0';
 	}
 	return (dest);
 }
