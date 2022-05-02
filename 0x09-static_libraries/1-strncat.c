@@ -1,33 +1,27 @@
 #include "main.h"
 
 /**
- * _strncat - two words
- * @dest : pointer to char param
- * @src : pointer to char param
- * @n : int parameter
- * Return: *dest
+ * _strncat - THis is the main
+ * @dest: This is the dest
+ * @src: This is the src
+ * @n: Thi is n
+ * Return: This is my return
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
-	int m;
-	int i;
+	int a, b;
 
-	m = 0;
-
-	for (i = 0; i < 1000; i++)
+	for (a = 0; dest[a] != '\0'; a++)
 	{
-		if (dest[i] == '\0')
-		{
-			break;
-		}
-		m++;
 	}
-
-	for (i = 0; src[i] != '\0' && i < n; i++)
+	for (b = 0; b < n && src[b] != '\0'; b++)
 	{
-		dest[m + i] = src[i];
+		dest[a] = src[b];
+		a++;
 	}
-	dest[m + i] = '\0';
+	if (b < n)
+	{
+	dest[a] = '\0';
+	}
 	return (dest);
 }
