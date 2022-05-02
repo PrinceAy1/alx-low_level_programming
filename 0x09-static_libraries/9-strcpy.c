@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
- * _strcpy - copy stringat the end of another string including \0.
- * @dest: pointer to string to be copied to.
- * @src: pointer to string to be copied.
+ * _strcpy - Copiar el contenido de uno a otra variable
+ * @dest: This is destiny
+ * @src: This is the copia
  *
- * Return: pointer to dest.
+ * Return: This return copy
  */
 char *_strcpy(char *dest, char *src)
 {
-	int j;
+	char *start = dest;
 
-	for (j = 0; src[j] != '\0'; j++)
+	while (*src != '\0')
 	{
-		dest[j] = src[j];
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	dest[j] = '\0';
-	return (dest);
+	*dest = '\0';
+	return (start);
 }
