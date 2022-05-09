@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _atoi - Converts chars in strings
