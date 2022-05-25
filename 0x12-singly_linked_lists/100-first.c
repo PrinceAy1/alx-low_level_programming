@@ -1,15 +1,15 @@
-#include <stdio.h>
 #include "lists.h"
 
+void myStartupFun(void) __attribute__ ((constructor));
+
 /**
- * printText - Function that prints a paragraph at compiling
+ *myStartupFun - function to print before main function
  *
- * Return:Nothing
+ *Return: Void
  */
 
-void printText(void)
+void myStartupFun(void)
 {
-	printf(
-		"You're beat! and yet, you must allow,\nI bore my house upon my back!\n"
-			);
+printf("You're beat! and yet, you must allow,\n");
+printf("I bore my house upon my back!\n");
 }
